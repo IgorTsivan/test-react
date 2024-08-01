@@ -1,0 +1,117 @@
+@import "src/assets/styles/variables";
+.transaction {
+  width: 100%;
+  border-bottom: 1px solid #1C1A1A;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+
+  &_web {
+    display: none;
+  }
+
+  &_header {
+    background: $gray;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 12px;
+
+    &-status {
+      h2 {
+        font-size: 12px;
+        line-height: 16px;
+      }
+      p {
+        opacity: 0.5;
+        font-size: 8px;
+        line-height: 10px;
+      }
+    }
+  }
+
+  &_slider {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  &_info {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+    padding-left: 32px;
+    width: max-content;
+
+    &-block {
+      h2 {
+        font-size: 12px;
+        line-height: 16px;
+      }
+      p {
+        opacity: 0.5;
+        font-size: 8px;
+        line-height: 13px;
+      }
+    }
+  }
+}
+
+@media (min-width: $medium) {
+  .transaction {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    &_web {
+      display: block;
+      border-bottom: 1px solid #1C1A1A;
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+    }
+    &_mobile {
+      display: none;
+    }
+
+    &_icon {
+      background: $gray;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+
+    &_info {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      padding-left: 0;
+      width: 100%;
+
+      &-method {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+        width: 300px;
+      }
+      &-block {
+        h2 {
+          font-size: 16px;
+          line-height: 22px;
+        }
+        p {
+          opacity: 0.5;
+          font-size: 14px;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.paymentsList {
+  margin-top: 24px;
+
+  &_title {
+    margin-bottom: 16px;
+  }
+
+  &_list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+}

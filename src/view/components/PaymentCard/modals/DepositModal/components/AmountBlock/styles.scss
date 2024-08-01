@@ -1,0 +1,68 @@
+@import "src/assets/styles/variables";
+.amountBlock {
+  text-align: center;
+
+  &_title {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  &_text {
+    opacity: 0.5;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+
+  &_amount {
+    width: 100%;
+    margin: 0 auto;
+    background: $gray;
+    height: 35px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px auto 0;
+    gap: 4px;
+
+    &-text {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    button {
+      height: 35px;
+      width: 52px;
+      background: $gray;
+    }
+  }
+}
+
+@media (min-width: $medium) {
+  .amountBlock {
+    &_amount {
+      height: 48px;
+    }
+    &_buttons {
+      &-text {
+        font-size: 16px;
+        line-height: 22px;
+      }
+      button {
+        height: 42px;
+        width: 118px;
+      }
+    }
+    &_text {
+      opacity: 0.5;
+      font-size: 14px;
+      margin-top: 14px;
+    }
+  }
+}

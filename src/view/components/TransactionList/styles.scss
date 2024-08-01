@@ -1,0 +1,57 @@
+@import "src/assets/styles/variables";
+.transactionList {
+  margin-top: 24px;
+
+  &_header {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-button {
+      width: 28px;
+      height: 28px;
+    }
+
+    &-title-web {
+      display: none;
+    }
+  }
+
+  &_button {
+    width: 100%;
+    background: $red;
+    margin-top: 8px;
+
+    h2 {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: $medium) {
+  .transactionList {
+    &_button {
+      max-width: 280px;
+      margin: 0 auto;
+    }
+    &_header{
+      &-title-web {
+        display: block;
+        font-size: 24px;
+      }
+      &-title-mob {
+        display: none;
+      }
+      &-button {
+        width: 42px;
+        height: 42px;
+
+        img {
+          width: 32px;
+        }
+      }
+    }
+
+  }
+}

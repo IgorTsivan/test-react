@@ -1,0 +1,111 @@
+@import "src/assets/styles/variables";
+
+.header {
+  box-shadow: 0 2px 7px 0 #000000B8;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  &_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    &--logo {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 8px;
+
+      img {
+        cursor: pointer;
+        width: 25px;
+        height: 32px;
+      }
+    }
+
+    &--buttons {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 8px;
+
+      &-avatar {
+        width: 82px;
+        height: 82px;
+        display: none;
+      }
+      &-icon {
+        display: none;
+      }
+    }
+
+    &--buttons-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &_plus-button {
+    background: $blue;
+    border-radius: 0 4px 4px 0;
+  }
+
+  &_button {
+    background: $blue_300;
+    color: $white;
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 4px 0 0 4px;
+
+    &--amount {
+      font-size: 14px;
+      font-family: $font-heavy;
+      line-height: normal;
+    }
+
+    &--percent {
+      background: $blue;
+      padding: 4px 2px;
+      border-radius: 4px;
+      font-size: 8px;
+      line-height: normal;
+      font-family: $font-heavy;
+    }
+  }
+}
+
+@media (min-width: $medium) {
+  .header {
+    height: 84px;
+
+    &_container {
+      &--buttons {
+
+
+        &-avatar {
+          display: block;
+        }
+        &-icon {
+          display: block;
+          position: relative;
+
+          &-notification {
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            right: 10px;
+            border-radius: 50%;
+            background: $red;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.iconButton_wrapper {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .2s;
+
+  &:hover {
+    background: #30363E;
+    transition: .2s;
+  }
+}

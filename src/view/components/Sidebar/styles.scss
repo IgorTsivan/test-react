@@ -1,0 +1,37 @@
+@import "src/assets/styles/variables";
+.sidebar {
+  z-index: 2;
+  background: $dark;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: .2s;
+  max-width: 320px;
+  opacity: 0;
+
+  &.show {
+    left: 0;
+    opacity: 1;
+  }
+
+  &_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &_items {
+    h2 {
+      font-size: 16px;
+      line-height: 21px;
+      margin-top: 16px;
+      cursor: pointer;
+    }
+  }
+
+}

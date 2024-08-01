@@ -1,0 +1,15 @@
+@import "src/assets/styles/variables";
+
+.deposit {
+  width: 100%;
+  padding-bottom: 24px;
+
+  &_title {
+    margin-top: 24px;
+  }
+
+  &_subtitle {
+    margin-top: 16px;
+  }
+}
+

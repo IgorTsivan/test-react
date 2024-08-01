@@ -1,0 +1,13 @@
+@import "src/assets/styles/variables";
+.center_wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 18px;
+  max-width: $x-large;
+}
+
+@media (min-width: $medium) {
+  .center_wrapper {
+    padding: 0 24px;
+  }
+}

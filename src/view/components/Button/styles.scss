@@ -1,0 +1,22 @@
+.button_wrapper {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .2s;
+
+  &:hover {
+    transition: .2s;
+    opacity: .9;
+  }
+
+  &:disabled {
+    opacity: .5;
+  }
+}

@@ -1,0 +1,81 @@
+@import "src/assets/styles/variables";
+.promocodeBlock {
+  margin-top: 36px;
+
+  &_title {
+    line-height: 24px;
+  }
+
+  &_subtitle {
+    font-size: 10px;
+    opacity: 0.5;
+    line-height: normal;
+    margin-bottom: 4px;
+  }
+
+  &_input {
+    max-width: 487px;
+
+    &.deposit {
+      width: 179px;
+      display: inline-block;
+    }
+  }
+
+  &_button {
+    width: 100%;
+    background: $red;
+    margin-top: 8px;
+
+    &.deposit {
+      width: 85px;
+      display: inline-block;
+      margin-left: 15px;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: $medium) {
+  .promocodeBlock {
+    &_title {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    &_subtitle {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    &_input {
+      display: inline-block;
+      input {
+        height: 42px;
+      }
+      span {
+        top: 12px;
+      }
+
+      &.deposit {
+        width: 465px;
+      }
+    }
+
+    &_button {
+      width: 152px;
+      margin-left: 16px;
+      display: inline-block;
+      height: 42px;
+
+      &.deposit {
+        width: 152px;
+        margin-left: 42px;
+        padding-bottom: 4px;
+      }
+    }
+  }
+}
